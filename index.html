@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/x-icon" href="humidity.png">
+    <script src="https://kit.fontawesome.com/76de512f75.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="container">
+            <h1>Weather App</h1>
+
+
+            <div class="firstSection">
+<p class="YWeather hov">Your Weather</p>
+<p class="SWeather hov"> Search Weather</p>
+
+            </div>
+
+
+            <div class="MainSection">
+
+  <!-- grant location -->
+  <div class="GLocation">
+   <img src="https://images.squarespace-cdn.com/content/v1/5f0c301c93ea301f3c01c03d/1604508308895-91IP8LRD16GZ2E2LXYDL/icon-encore-geo-location-targeting-animated.gif?format=500w" alt="" width="100" height="100" loading="lazy">
+   <p class="grant">Grant Location Access</p>
+   <p>Allow Access to get Weather Information </p>
+   <button class="btn AccessBtn">Grant Access</button>
+  </div>
+    
+  <!-- serach form --> 
+   <form  class="WeatherSerach cityInfo">
+    <input type="text" class="cityData" placeholder="Serach for City...">
+    <button class="btn">
+        <i class="fa-solid fa-magnifying-glass" width="20" height="20" loading="lazy"></i> </button>
+  </form>
+
+<!-- loading screen -->
+<div class="loading-container">
+ <img src="loading.gif" width="150" height="150">
+ <p>Loading</p>
+</div>
+
+<!-- Show weather info -->
+<div class="weatherInfo">
+
+<div class="CntyFlag">
+<p cityName></p>
+
+<img  src="" alt="countryImg" countryImg width="50px" height="50px">
+</div>
+<div class="tempatureSection">
+<p class="data-Description"></p>
+
+<img src="" alt="weatherIcon" weatherImg width="80px" height="80px">
+<p class="tempature"></p>
+</div>
+<div class="cards">
+    <!-- card1 -->
+<div class="card card1">
+    <img src="wind.png" alt="Wind">
+    <p>WIND SPEED</p>
+    <p wSpeed></p>
+</div>
+
+ <!--card2 -->
+<div class="card card2">
+    <img src="humidity.png" alt="humidity" >
+    <p>HUMIDITY</p>
+    <p humidity></p>
+</div>
+
+<!-- card3 -->
+<div class="card card3">
+    <img src="cloud.png" alt="cloud">
+    <p>CLOUDS</p>
+    <p clouds></p>
+</div>
+
+</div>
+</div> 
+<div class="error">
+    <p class="errorMsg"></p>
+</div>
+            </div>
+
+
+
+
+            <div class="copyright">
+                <p>Copyright ©️ vineet. Made with <i class="fa-solid fa-heart"></i> by vineet singh</p>
+            </div>
+        </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

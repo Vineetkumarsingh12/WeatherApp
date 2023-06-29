@@ -1,0 +1,199 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    /* color:white; */
+}
+body{
+    background-color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 2rem;
+    color:red;
+    background-color: rgba(29, 25, 254, 0.15);
+
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem 1rem;
+}
+.firstSection{
+    display: flex;
+    flex-direction:row;
+     max-width:40rem;
+    width: 90%;
+    margin: 2rem auto;
+    text-align: center;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.YWeather,.SWeather{
+    margin-top: 2rem;
+    cursor: pointer;
+    
+    
+    color:red;
+}
+.hov:hover{
+    transform: translateY(-3px);
+}
+.MainSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+.GLocation{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    
+    /* background-color: rgba(29, 25, 254, 0.15); */
+
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem 1rem; 
+
+
+   /* display: none; */
+}
+.GLocation .grant{
+    font-size:2rem ;
+    font-weight: bold;
+}
+.btn{
+    background-color: rgba(29, 25, 254, 0.15);
+
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem 1rem;  
+    cursor: pointer;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+
+/*   ------------------ */
+.loading-container{
+    display: none;
+    flex-direction: column;
+}
+.loading-container p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.CntyFlag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+justify-content: center;
+font-size:3rem;
+font-weight: bold;
+gap:1rem;
+margin-top: 1rem;
+}
+.cards{
+    display: flex;
+    /* max-width: 100%; */
+    /* width: 700px; */
+    /* height: 500px; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:3rem;
+    /* margin: 2rem auto; */
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    /* /* width:5rem; */
+    max-height: 5rem;; 
+    /* max-width: 5rem; */
+    
+}
+.card p{
+    text-align: center;
+}
+.card{
+    border-radius: 1rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 0.5rem 1rem; 
+}
+.tempatureSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.data-Description{
+    font-size: 2rem;
+}
+.tempature{
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+.cityInfo{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap:2rem; */
+    gap: 2rem;
+}
+.cityInfo input {
+    border-radius: 1rem;
+    text-align: center;
+    color:black;
+    font-weight: bold;
+ 
+}
+
+.cityInfo i{
+    color:white;
+}
+
+
+.weatherInfo{
+    display: none;
+    flex-direction: column;
+}
+.active{
+    display: flex;
+}
+.error{
+    display: none;
+    font: 2rem;
+    font-weight: bold;
+}
+.copyright{
+    width:100%;
+    /* position: absolute; */
+    text-align:center;
+    /* bottom: 0; */
+    /* padding:25px 0; */
+ 
+    font-weight:300;
+    /* margin-top:20px; */
+}
+.copyright i{
+    color:#ff004f;
+    margin: 1rem;
+}
+.AccessBtn{
+    color:white;
+}
